@@ -1,0 +1,4 @@
+<div class="selector">
+    <input [(ngModel)]="search" (input)="onInputChange()" type="text" />
+    <div class="items"><div *ngFor="let i of selectedItems" class="item">{{getter(i)}}</div></div>
+</div>
